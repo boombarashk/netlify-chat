@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat page - Authorization</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/src/styles/base.css" rel="stylesheet" type="text/css" />
+    <link href="/src/styles/form.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="root">
+    <div class="container">
+        <div class="container-inner">
+            <form name="auth" class="form form__aqua container-inner-inner box-shadow-bottom js-form">
+                <div class="form-caption form-caption__orange box-shadow-top">
+                    <a href="/reg" class="link form-caption-link">Registering</a>
+                </div>
+                <div class="form-caption form-caption__aqua form-caption__active box-shadow-top">
+                    Sign In
+                </div>
+                <div class="form-body">
+                    <fieldset class="fieldset">
+                        <label for="authLogin" class="label">Login</label>
+                        <input id="authLogin" name="login" type="text" class="input input__aqua">
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="authPassword" class="label">Password</label>
+                        <input id="authPassword" name="password" type="password" class="input input__aqua">
+                    </fieldset>
+                    <button class="button button__aqua" type="submit">OK</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <script src="/src/script.js"></script>
+</body>
+</html>

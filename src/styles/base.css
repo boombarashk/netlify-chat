@@ -1,0 +1,69 @@
+html, body {
+    margin:0;
+    padding:0;
+    height:100%;
+    font-family: 'Mountains of Christmas', Roboto, sans-serif;
+}
+/*.body{
+    background: url(set-cute-dinosauts-foliage-volcano-cactus_84091-581.jpg) center center no-repeat
+}*/
+#root {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-self: center;
+    width: 748px;
+    height: 540px;
+    /*overflow: hidden;*/
+}
+
+.container-inner {
+    display: flex;
+    flex-direction: row;
+    justify-items: end;
+    height: 100%;
+    width: 100%;
+}
+
+.container-inner-inner {
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+    border-bottom-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+}
+.box-shadow-top {
+    -webkit-box-shadow: 0px -9px 10px -1px rgba(13, 13, 13, 0.24);
+    -moz-box-shadow: 0px -9px 10px -1px rgba(13, 13, 13, 0.24);
+    box-shadow: 0px -9px 10px -1px rgba(13, 13, 13, 0.24);
+}
+.box-shadow-bottom {
+    -webkit-box-shadow: 0px 10px 10px -1px rgba(13, 13, 13, 0.24);
+    -moz-box-shadow: 0px 10px 10px -1px rgba(13, 13, 13, 0.24);
+    box-shadow: 0px 10px 10px -1px rgba(13, 13, 13, 0.24);
+}
+.link {
+    color: #1f1f1f;
+    cursor:pointer;
+    text-decoration: none;
+}
+.link:hover {
+    color: #22a08c;
+}
+
+h1 {
+    font-size: 5em;
+}
+h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.text-center {
+    text-align: center;
+}

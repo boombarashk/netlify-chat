@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat page - Registering</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/src/styles/base.css" rel="stylesheet" type="text/css" />
+    <link href="/src/styles/form.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="root">
+    <div class="container">
+        <div class="container-inner">
+            <form name="register" class="form form__orange container-inner-inner box-shadow-bottom js-form">
+                <div class="form-caption form-caption__orange form-caption__active box-shadow-top">
+                    Registering
+                </div>
+                <div class="form-caption form-caption__aqua box-shadow-top">
+                    <a href="/auth" class="link form-caption-link">Sign In</a>
+                </div>
+                <div class="form-body">
+                    <fieldset class="fieldset">
+                        <label for="regFirstName" class="label">First Name</label>
+                        <input id="regFirstName" name="first_name" type="text" class="input input__orange">
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="regSecondName" class="label">Second Name</label>
+                        <input id="regSecondName" name="second_name" type="text" class="input input__orange">
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="regLogin" class="label">Login</label>
+                        <input id="regLogin" name="login" type="text" class="input input__orange">
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="regEmail" class="label">Email</label>
+                        <input id="regEmail" name="email" type="email" class="input input__orange">
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="regPassword" class="label">Password</label>
+                        <input id="regPassword" name="password" type="password" class="input input__orange">
+                    </fieldset>
+                    <fieldset class="fieldset">
+                        <label for="regPhone" class="label">Phone</label>
+                        <input id="regPhone" name="phone" type="phone" class="input input__orange">
+                    </fieldset>
+                    <button class="button button__orange" type="submit">OK</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <script src="/src/script.js"></script>
+</body>
+</html>
