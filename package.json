@@ -1,0 +1,24 @@
+{
+  "name": "netlify-chat",
+  "version": "1.0.0",
+  "description": "learning project",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "nodemon server.js localhost 9090",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boombarashk/netlify-chat.git"
+  },
+  "author": "boombarashk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/boombarashk/netlify-chat/issues"
+  },
+  "homepage": "https://github.com/boombarashk/netlify-chat#readme",
+  "devDependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
+  }
+}
