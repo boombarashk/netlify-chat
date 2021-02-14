@@ -1,0 +1,100 @@
+.form {
+    display: flex;
+    flex-direction: row;
+}
+.form__orange {
+    background-color: #FFC56D/*#F66514*/;
+}
+
+.form__aqua {
+    background-color: #8DD3CA;
+}
+
+.form__markup2 {
+    background-color: #C7FFFF;
+}
+
+.form-body {
+    align-self: center;
+}
+
+.form-caption {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -64px;
+    height: 64px;
+    min-width: 120px;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-left: .8em;
+    padding-right: .8em;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
+}
+.form-caption-link,
+.form-caption-link:hover {
+    color: #1f1f1f;
+}
+.form-caption__orange {
+    background-color: #FFC56D
+}
+.form-caption__markup2 {
+    background-color: #C7FFFF;
+}
+.form-caption__aqua {
+    background-color: #8DD3CA
+}
+.form-caption__active {
+    z-index: 1;
+}
+.form-caption + .form-caption {
+    left: 160px
+}
+.form-caption + .form-caption + .form-caption {
+    left: 320px
+}
+
+.form-button {
+    width: 360px;
+    margin-left: calc(110px + 2em);
+}
+
+.fieldset {
+    display: flex;
+    padding: 0;
+    margin: 0.5em 1em .5em;
+    border: none;
+}
+.fieldset__without-label {
+    margin-left: 0;
+}
+.label {
+    display: inline-block;
+    min-width: 110px;
+    padding-left: 1em;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+.input {
+    width: 360px;
+    padding-left: .5em;
+    padding-right: .5em;
+    font-size: 1em;
+    line-height: 1.8em;
+    box-sizing: border-box;
+    border: 1px solid white;
+    border-bottom-color: #ECECEC;
+    font-family: 'Mountains of Christmas', Roboto, sans-serif;
+}
+.input__orange:focus {
+    border-bottom-color: #F66514;
+}
+.input__aqua:focus,
+.input__markup2:focus {
+    border-bottom-color: #6DA09A;
+}
+.input__invalid {
+    border-color: #C10000;
+}

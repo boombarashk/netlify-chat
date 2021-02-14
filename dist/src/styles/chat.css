@@ -1,0 +1,142 @@
+.chat {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.chat__aqua {
+    background-color: #8DD3CA;
+}
+
+.chat-list {
+    display: flex;
+    height: 132px;
+    margin: 2px 2px 0;
+    border-top-right-radius: 20px;
+    /*border-top-left-radius: 20px;*/
+}
+.chat-list-item {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 48px;
+    border-right: 1px solid #6DA09A;
+    border-bottom: 1px solid #6DA09A;
+}
+.chat-list-item:first-child {
+    border-top-left-radius: 20px;
+}
+
+.chat-list-item__markup1 {
+    background-color: #A3F1B9;
+}
+.chat-list-item__markup2 {
+    background-color: #C7FFFF;
+}
+.chat-list-item__active {
+    background-color: white;
+}
+
+.chat-list-item-preview {
+    width: 100%;
+    height: 36px;
+    text-align: center;
+}
+
+.chat-list-item-preview-inner {
+    display: inline-block;
+    margin-top: 4px;
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.chat-list-item-label {
+    position: relative;
+    width: calc(100% - 36px);
+    flex: 1;
+}
+.chat-list-item-label-inner {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    width: 48px;
+}
+
+.chat-list-item-label-inner > div {
+    writing-mode:vertical-lr;
+    transform:rotate(180deg);
+    height: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-top: .5em;
+    box-sizing: border-box;
+}
+
+.chat-form {
+    display: flex;
+    flex-direction: row;
+    height: 96px;
+    margin: 0 2px 2px;
+    background-color: white;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.chat-form-textarea {
+    box-sizing: border-box;
+    width: calc(100% - 96px);
+    padding: .5em;
+    font-family: 'Mountains of Christmas', Roboto, sans-serif;
+    border-bottom-left-radius: 20px;
+}
+.chat-form-controls {
+    box-sizing: border-box;
+    width: 96px;
+    padding: .5em;
+}
+.chat-form-controls-submit {
+    position: relative;
+    display: block;
+    width: 100%;
+    font-size: 1.2em;
+    padding: 0 31% 0 0;
+    text-align: right;
+}
+.chat-form-controls-submit:before {
+    position: absolute;
+    display: block;
+    width: 28%;
+    height: 50%;
+    background-color: white;
+    content:""
+}
+
+.chat-viewer {
+}
+.chat-viewer-empty {
+    text-align: center;
+    color: #6DA09A;
+}
+.chat-settings-icon {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url("/src/assets/settings_icon.png") 0 0 no-repeat;
+    cursor: pointer;
+}
+.chat-settings-icon:hover {
+    background-position: 0 -64px;
+}
