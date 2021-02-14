@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Settings page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
+    <link href="/src/styles/base.css" rel="stylesheet" type="text/css" />
+    <link href="/src/styles/form.css" rel="stylesheet" type="text/css" />
+    <link href="/src/styles/settings.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="root">
+    <div class="container">
+        <div class="container-inner">
+            <form name="settings" class="form form__orange container-inner-inner box-shadow-bottom js-form">
+                <div class="form-caption form-caption__aqua box-shadow-top">
+                    <a href="/settings-base" class="link form-caption-link">Base</a>
+                </div>
+                <div class="form-caption form-caption__markup2 box-shadow-top">
+                    <a href="/settings-password" class="link form-caption-link">Password</a>
+                </div>
+                <div class="form-caption form-caption__orange form-caption__active box-shadow-top">
+                    Avatar
+                </div>
+                <div class="form-body">
+                    <div class="form-body-avatar">
+                        <div class="form-body-avatar-preview">
+                            Preview:
+                            <div class="form-body-avatar-preview-inner">
+                                <img src="/src/assets/avatar_dino_v.png" alt=""/>
+                            </div>
+                        </div>
+                        <div class="form-body-avatar-image">
+                            <img src="/src/assets/dino_v.png" alt=""/>
+                        </div>
+                    </div>
+                    <fieldset class="fieldset fieldset__without-label">
+                        <input type="file" name="avatar" hidden/>
+                        <button class="button button__orange form-button" type="button">Download image</button>
+                    </fieldset>
+                    <button class="button button__orange form-button" type="submit" disabled>OK</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script src="/src/script.js"></script>
+</body>
+</html>

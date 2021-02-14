@@ -95,9 +95,18 @@ textarea {
 .button__orange:hover {
     background-color: #F66514;
 }
+.button__orange[disabled] {
+    background-color: #e28a0c;
+}
 .button__aqua {
     background-color: #6DA09A;
 }
 .button__aqua:hover {
+    background-color: #22a08c;
+}
+.button__markup2 {
+    background-color: #6DA09A;
+}
+.button__markup2:hover {
     background-color: #22a08c;
 }

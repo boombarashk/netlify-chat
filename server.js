@@ -4,7 +4,7 @@ const app = express()
 const port = "9090"
 
 app.use("/src", express.static(__dirname + '/src'));
-["index", "auth", "reg", "404", "500"].forEach(filename => {
+["index", "auth", "reg", "404", "500", "settings-base", "settings-password", "settings-avatar"].forEach(filename => {
     const pathname = filename === "index" ? "/" : `/${filename}`
 
     app.get(pathname, (req, res) => {

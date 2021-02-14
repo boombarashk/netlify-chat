@@ -10,6 +10,10 @@
     background-color: #8DD3CA;
 }
 
+.form__markup2 {
+    background-color: #C7FFFF;
+}
+
 .form-body {
     align-self: center;
 }
@@ -36,6 +40,9 @@
 .form-caption__orange {
     background-color: #FFC56D
 }
+.form-caption__markup2 {
+    background-color: #C7FFFF;
+}
 .form-caption__aqua {
     background-color: #8DD3CA
 }
@@ -44,6 +51,9 @@
 }
 .form-caption + .form-caption {
     left: 160px
+}
+.form-caption + .form-caption + .form-caption {
+    left: 320px
 }
 
 .form-button {
@@ -56,6 +66,9 @@
     padding: 0;
     margin: 0.5em 1em .5em;
     border: none;
+}
+.fieldset__without-label {
+    margin-left: 0;
 }
 .label {
     display: inline-block;
@@ -78,7 +91,8 @@
 .input__orange:focus {
     border-bottom-color: #F66514;
 }
-.input__aqua:focus {
+.input__aqua:focus,
+.input__markup2:focus {
     border-bottom-color: #6DA09A;
 }
 .input__invalid {
