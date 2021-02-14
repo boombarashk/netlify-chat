@@ -1,8 +1,9 @@
 function stopSubmitAndReturnDataFrom(ev) {
-    ev.preventDefault();
+    ev.preventDefault()
     const data = {}
     Array.from(this.elements).forEach( element => {
-        if (element.tagName.toLowerCase() === "input") {
+        const tagname = element.tagName.toLowerCase()
+        if (tagname === "input" || tagname === "textarea") {
             data[element.name] = element.value
         }
     })
@@ -10,8 +11,19 @@ function stopSubmitAndReturnDataFrom(ev) {
     return data
 }
 
+function goPage(ev) {
+    const page = ev.target.dataset.page
+    if (page) {
+        document.location.href = `/${page}`
+    }
+}
+
 window.onload = () => {
     Array.from(document.querySelectorAll(".js-form")).forEach(form => {
         form.addEventListener("submit", stopSubmitAndReturnDataFrom)
+    })
+
+    Array.from(document.querySelectorAll(".js-go-page")).forEach(element => {
+        element.addEventListener("click", goPage)
     })
 }

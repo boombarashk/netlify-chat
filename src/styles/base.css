@@ -64,6 +64,40 @@ h2 {
     font-size: 2.5em;
 }
 
+* {
+    outline: none
+}
+
+textarea {
+    resize: none;
+    border: none;
+}
+
 .text-center {
     text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding-left: .5em;
+    padding-right: .5em;
+    font-size: 1em;
+    line-height: 1.8em;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Mountains of Christmas', Roboto, sans-serif;
+    font-weight: bold;
+    color: white
+}
+.button__orange {
+    background-color: #E26F00;
+}
+.button__orange:hover {
+    background-color: #F66514;
+}
+.button__aqua {
+    background-color: #6DA09A;
+}
+.button__aqua:hover {
+    background-color: #22a08c;
 }

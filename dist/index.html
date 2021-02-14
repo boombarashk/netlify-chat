@@ -8,15 +8,68 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@400;700&display=swap" rel="stylesheet">
     <link href="/src/styles/base.css" rel="stylesheet" type="text/css" />
+    <link href="/src/styles/chat.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <div id="root">
         <div class="container">
             <div class="container-inner">
+                <div class="chat chat__aqua box-shadow-bottom ">
+                    <div class="chat-list">
+                        <div class="chat-list-item chat-list-item__markup1">
+                            <div class="chat-list-item-preview">
+                                <div class="chat-list-item-preview-inner"><img src="/src/assets/avatar_dino.png" alt=""/></div>
+                            </div>
+                            <div class="chat-list-item-label">
+                                <div class="chat-list-item-label-inner">
+                                    <div title="Вася">Вася</div>
+                                </div></div>
+                        </div>
+                        <div class="chat-list-item chat-list-item__markup2">
+                            <div class="chat-list-item-preview">
+                                <div class="chat-list-item-preview-inner"><img src="/src/assets/avatar_dino.png" alt=""/></div>
+                            </div>
+                            <div class="chat-list-item-label">
+                                <div class="chat-list-item-label-inner">
+                                    <div title="WorkGroup">WorkGroup</div></div></div>
+                        </div>
+                        <div class="chat-list-item">
+                            <div class="chat-list-item-preview">
+                                <div class="chat-list-item-preview-inner"><img src="/src/assets/avatar_dino.png" alt=""/></div>
+                            </div>
+                            <div class="chat-list-item-label">
+                                <div class="chat-list-item-label-inner">
+                                    <div title="bro">bro</div></div></div>
+                        </div>
+                        <div class="chat-list-item chat-list-item__active">
+                            <div class="chat-list-item-preview">
+                                <div class="chat-list-item-preview-inner"><img src="/src/assets/avatar_cosmo.jpg" alt=""/></div>
+                            </div>
+                            <div class="chat-list-item-label">
+                                <div class="chat-list-item-label-inner">
+                                    <div title="Валентин Семенович Крузенштерн">Валентин Семенович Крузенштерн</div></div></div>
+                        </div>
+                    </div>
+                    <div class="chat-viewer">
+                        <div class="chat-viewer-empty">No data</div>
+                    </div>
 
+                    <div class="chat-settings-icon js-go-page" data-page="settings" title="Settings"></div>
+
+                    <form class="chat-form js-form">
+                        <textarea class="chat-form-textarea" name="text">Тут может быть что отправить</textarea>
+                        <div class="chat-form-controls">
+                            <button class="button button__aqua chat-form-controls-submit" type="submit" title="Send">
+                                &#8629;
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
+
+    <script src="/src/script.js"></script>
 </body>
 </html>
 
