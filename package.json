@@ -13,6 +13,7 @@
   },
   "author": "boombarashk",
   "license": "ISC",
+  "engine": "^12.13.1",
   "bugs": {
     "url": "https://github.com/boombarashk/netlify-chat/issues"
   },
