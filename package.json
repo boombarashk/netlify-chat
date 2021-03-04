@@ -20,6 +20,8 @@
   "homepage": "https://github.com/boombarashk/netlify-chat#readme",
   "devDependencies": {
     "express": "^4.17.1",
+    "express-handlebars": "^5.2.1",
+    "hbs": "^4.1.1",
     "nodemon": "^2.0.7"
   }
 }
