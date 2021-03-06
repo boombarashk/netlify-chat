@@ -1,0 +1,9 @@
+<script src="/src/script.js" type="module"></script>
+
+{{! no withOutPageScript by default }}
+{{#if withOutPageScript}}
+{{else}}
+    {{#if namePage}}
+        <script src="/src/pages/{{namePage}}.js" type="module"></script>
+    {{/if}}
+{{/if}}

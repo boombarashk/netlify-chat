@@ -7,7 +7,6 @@ function stopSubmitAndReturnDataFrom(ev) {
             data[element.name] = element.value
         }
     })
-    console.log(data)
     return data
 }
 
@@ -16,6 +15,46 @@ function goPage(ev) {
     if (page) {
         document.location.href = `/${page}`
     }
+}
+
+let rootNode
+document.addEventListener('DOMContentLoaded', function(){
+    rootNode = document.querySelector(".root");
+})
+
+const fetchTemplate = ({name, url}) => {
+    return fetch(url).then(function (response) {
+        return response.text();
+    }).then(function (html) {
+        return {[name]: html};
+    }).catch(function (err) {
+        // There was an error
+        console.warn('Something went wrong.', err);
+    });
+}
+
+const registerBlocks = (blocks) => {
+    let templates = {}
+    const promises = blocks.map((opts) => {
+        return fetchTemplate(opts)
+    })
+    return Promise.all(promises).then( result => {
+        result.forEach(template => {
+            templates = Object.assign({...templates, ...template})
+        })
+        return templates
+    })
+}
+
+window.initApp = () => {
+    return new Promise((resolve) => {
+        const intervalLoading = setInterval(() =>{
+            if (rootNode) {
+                clearInterval(intervalLoading)
+                resolve({rootNode, registerBlocks})
+            }
+        }, 300)
+    })
 }
 
 window.onload = () => {

@@ -20,7 +20,7 @@ app.use("/src", express.static(__dirname + '/src'));
 })
 
 app.get("/hbs/auth", function (req, res) {
-    res.render("home", {title: "Home page"});
+    res.render("auth", {title: "Authorization", namePage: 'auth'});
 });
 
 app.listen(port)
